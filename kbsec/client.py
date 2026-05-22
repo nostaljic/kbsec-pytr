@@ -14,8 +14,8 @@ class KBSecClient:
 
     def __init__(
         self,
-        host: str = '10.200.2.112',
-        port: int = 8400,
+        host: str = 'hts.kbsec.com',
+        port: int = 5001,
         pool_size: int = 2,
         timeout: int = 30,
         rule_dir: str = None,
@@ -32,8 +32,8 @@ class KBSecClient:
         try:
             tree = ET.parse(config_path)
             root = tree.getroot()
-            host = root.findtext('.//ServerIP') or '10.200.2.112'
-            port = int(root.findtext('.//ServerPort') or 8400)
+            host = root.findtext('.//ServerIP') or 'hts.kbsec.com'
+            port = int(root.findtext('.//ServerPort') or 5001)
             pool_size = int(root.findtext('.//NodeCount') or 2)
             timeout = int(root.findtext('.//RqTimeout') or 30)
             rule_dir = root.findtext('.//TrRuleDir')
