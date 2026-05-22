@@ -7,8 +7,15 @@ from typing import Optional
 
 from .exceptions import KBConnectionError, KBTimeoutError
 
-DEFAULT_HOST = '10.200.2.112'
-DEFAULT_PORT = 8400
+# Environment presets (from KASSConf.xml)
+ENV_HOSTS = {
+    'dev':      ('hts.kbsec.com', 5001),
+    'prd':      ('128.12.248.170', 5001),
+    'external': ('10.200.2.112',   8400),
+}
+
+DEFAULT_HOST = 'hts.kbsec.com'
+DEFAULT_PORT = 5001
 DEFAULT_TIMEOUT = 30
 
 
