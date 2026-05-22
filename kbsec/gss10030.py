@@ -29,7 +29,7 @@ def _format_date(value: Any) -> str:
 
 
 def _format_compare_code(code: str) -> str:
-    mapping = {"1": "Ã�Ã�Ã�Ã�", "2": "Ã�Ã�Ã�Ã�", "3": "Ã�Ã�Ã�Ã�", "4": "Ã�Ã�Ã�Ã�", "5": "Ã�Ã�Ã�Ã�"}
+    mapping = {"1": "상한", "2": "상승", "3": "보합", "4": "하락", "5": "하한"}
     return mapping.get(code, "")
 
 
