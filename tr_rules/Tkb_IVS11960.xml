@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<Tkb_IVS11960 error="false">
+	<Name>IVS11960</Name>
+	<Desc> 현재가(기술적분석)(IVS11960)</Desc>
+	<Code></Code>
+	<Route>IVS11960</Route>
+	<base21></base21>
+	<blocktype></blocktype>
+	<attytype>attr;</attytype>
+	<headtype></headtype>
+	<Journal>true</Journal>
+	<screenid>1960</screenid>
+	<Mid></Mid>
+	<Processor_info>hts</Processor_info>
+	<Tr_info>NIVS01</Tr_info>
+	<Page_num>1960</Page_num>
+	<HostExpireTime>15000</HostExpireTime>
+	<Input iName="" >
+		<I Name="nxtPg" Align="Right" Desc="다음페이지 NXT_PG" Journal="N" Pad="0" Size="3" SizeEN="3" SizeKR="3" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="_nxtPg" Align="Left" Desc="_다음페이지 NXT_PG" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="nxtKey" Align="Right" Desc="다음키 NXT_KEY" Journal="N" Pad="0" Size="3" SizeEN="3" SizeKR="3" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="_nxtKey" Align="Left" Desc="_다음키 NXT_KEY" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="mktClsf" Align="Left" Desc="시장구분 MKT_CLSF" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="_mktClsf" Align="Left" Desc="_시장구분 MKT_CLSF" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="isCd" Align="Left" Desc="종목코드 IS_CD" Journal="N" Pad="SPC" Size="9" SizeEN="9" SizeKR="9" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="_isCd" Align="Left" Desc="_종목코드 IS_CD" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+	</Input>
+	<Output oName="" >
+		<O Name="lngth" Align="Left" Desc="길이C5" Journal="N" Pad="SPC" Size="5" SizeEN="5" SizeKR="5" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="clsfP" Align="Left" Desc="구분자_C2" Journal="N" Pad="SPC" Size="2" SizeEN="2" SizeKR="2" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="msg" Align="Left" Desc="메시지_C80" Journal="N" Pad="SPC" Size="80" SizeEN="80" SizeKR="80" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="RecordSize" Align="Left" Desc="레코드길이" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="nxtPg" Align="Left" Desc="다음페이지 NXT_PG" Journal="N" Pad="SPC" Size="3" SizeEN="3" SizeKR="3" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_nxtPg" Align="Left" Desc="_다음페이지 NXT_PG" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="nxtKey" Align="Left" Desc="다음키 NXT_KEY" Journal="N" Pad="SPC" Size="3" SizeEN="3" SizeKR="3" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_nxtKey" Align="Left" Desc="_다음키 NXT_KEY" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="isCd" Align="Left" Desc="종목코드 IS_CD" Journal="N" Pad="SPC" Size="9" SizeEN="9" SizeKR="9" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_isCd" Align="Left" Desc="_종목코드 IS_CD" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="filler" Align="Left" Desc="FILLER FILLER" Journal="N" Pad="SPC" Size="3" SizeEN="3" SizeKR="3" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_filler" Align="Left" Desc="_FILLER FILLER" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="tstPrd" Align="Left" Desc="테스트기간 TST_PRD" Journal="N" Pad="SPC" Size="4" SizeEN="4" SizeKR="4" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_tstPrd" Align="Left" Desc="_테스트기간 TST_PRD" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="out2_RecordSize" Align="Left" Desc="out2_레코드길이" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="out2" Repeat="0" Align="Left" Desc="" Journal="N" Pad="SPC" Size="0" SizeEN="0" SizeKR="0" Spec="struct" IOType="Record" UpperCase="N" Valid="Y" Default="" Encrypt="" >
+			<O1 Name="drctgTypCd" Align="Left" Desc="지표유형코드 DRCTG_TYP_CD" Journal="N" Pad="SPC" Size="2" SizeEN="2" SizeKR="2" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_drctgTypCd" Align="Left" Desc="_지표유형코드 DRCTG_TYP_CD" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="sgnlClsf" Align="Left" Desc="신호구분 SGNL_CLSF" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_sgnlClsf" Align="Left" Desc="_신호구분 SGNL_CLSF" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="filler" Align="Left" Desc="FILLER FILLER" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_filler" Align="Left" Desc="_FILLER FILLER" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="lpsDyC" Align="Left" Desc="경과일수 LPS_DY_C" Journal="N" Pad="SPC" Size="5" SizeEN="5" SizeKR="5" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_lpsDyC" Align="Left" Desc="_경과일수 LPS_DY_C" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="sgnlCnt" Align="Left" Desc="신호건수 SGNL_CNT" Journal="N" Pad="SPC" Size="4" SizeEN="4" SizeKR="4" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_sgnlCnt" Align="Left" Desc="_신호건수 SGNL_CNT" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="avrHldDyC" Align="Left" Desc="평균보유일수 AVR_HLD_DY_C" Journal="N" Pad="SPC" Size="12" SizeEN="12" SizeKR="12" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_avrHldDyC" Align="Left" Desc="_평균보유일수 AVR_HLD_DY_C" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="wnnRtP2" Align="Left" Desc="승률P2 WNN_RT_P2" Journal="N" Pad="SPC" Size="13" SizeEN="13" SizeKR="13" format="double" Spec="char" portion="2" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_wnnRtP2" Align="Left" Desc="_승률P2 WNN_RT_P2" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="avrYldP2" Align="Left" Desc="평균수익율P2 AVR_YLD_P2" Journal="N" Pad="SPC" Size="13" SizeEN="13" SizeKR="13" format="double" Spec="char" portion="2" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_avrYldP2" Align="Left" Desc="_평균수익율P2 AVR_YLD_P2" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="avrLssRP2" Align="Left" Desc="평균손실율P2 AVR_LSS_R_P2" Journal="N" Pad="SPC" Size="13" SizeEN="13" SizeKR="13" format="double" Spec="char" portion="2" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_avrLssRP2" Align="Left" Desc="_평균손실율P2 AVR_LSS_R_P2" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="dys5Pcnt10ErnPrbbltP2" Align="Left" Desc="5일간10퍼센트수익확률P2 DYS5_PCNT10_ERN_PRBBLT_P2" Journal="N" Pad="SPC" Size="6" SizeEN="6" SizeKR="6" format="double" Spec="char" portion="2" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_dys5Pcnt10ErnPrbbltP2" Align="Left" Desc="_5일간10퍼센트수익확률P2 DYS5_PCNT10_ERN_PRBBLT_P2" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="dys10Pcnt20ErnPrbbltP2" Align="Left" Desc="일간1020퍼센트수익확률P2 DYS10_PCNT20_ERN_PRBBLT_P2" Journal="N" Pad="SPC" Size="6" SizeEN="6" SizeKR="6" format="double" Spec="char" portion="2" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_dys10Pcnt20ErnPrbbltP2" Align="Left" Desc="_일간1020퍼센트수익확률P2 DYS10_PCNT20_ERN_PRBBLT_P2" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		</O>
+	</Output>
+</Tkb_IVS11960>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<Tkb_VIS50200 error="false">
+	<Name>VIS50200</Name>
+	<Desc> 종목별퀀트점수조회(VIS50200)</Desc>
+	<Code></Code>
+	<Route>VIS50200</Route>
+	<base21></base21>
+	<blocktype></blocktype>
+	<attytype></attytype>
+	<headtype></headtype>
+	<Journal>true</Journal>
+	<screenid>0200</screenid>
+	<Mid></Mid>
+	<Processor_info>hts</Processor_info>
+	<Tr_info>NIVS01</Tr_info>
+	<Page_num>0200</Page_num>
+	<HostExpireTime>15000</HostExpireTime>
+	<Input iName="" >
+		<I Name="inqCnt" Align="Right" Desc="조회건수 INQ_CNT" Journal="N" Pad="0" Size="4" SizeEN="4" SizeKR="4" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="filler" Align="Left" Desc="FILLER FILLER" Journal="N" Pad="SPC" Size="4" SizeEN="4" SizeKR="4" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="in2" Align="Left" Desc="" Journal="N" Pad="SPC" Size="100" SizeEN="100" SizeKR="100" Spec="struct" IOType="Record" UpperCase="N" Valid="Y" Default="" Encrypt="" >
+			<I1 Name="isCd" Align="Left" Desc="종목코드 IS_CD" Journal="N" Pad="SPC" Size="6" SizeEN="6" SizeKR="6" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<I1 Name="filler1" Align="Left" Desc="FILLER FILLER" Journal="N" Pad="SPC" Size="2" SizeEN="2" SizeKR="2" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		</I>
+	</Input>
+	<Output oName="" >
+		<O Name="lngth" Align="Left" Desc="길이C5" Journal="N" Pad="SPC" Size="5" SizeEN="5" SizeKR="5" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="clsfP" Align="Left" Desc="구분자_C2" Journal="N" Pad="SPC" Size="2" SizeEN="2" SizeKR="2" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="msg" Align="Left" Desc="메시지_C80" Journal="N" Pad="SPC" Size="80" SizeEN="80" SizeKR="80" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="RecordSize" Align="Left" Desc="레코드길이" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="inqCnt" Align="Left" Desc="조회건수 INQ_CNT" Journal="N" Pad="SPC" Size="4" SizeEN="4" SizeKR="4" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="filler" Align="Left" Desc="FILLER FILLER" Journal="N" Pad="SPC" Size="4" SizeEN="4" SizeKR="4" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="out2_RecordSize" Align="Left" Desc="out2_레코드길이" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="out2" Repeat="0" Align="Left" Desc="" Journal="N" Pad="SPC" Size="0" SizeEN="0" SizeKR="0" Spec="struct" IOType="Record" UpperCase="N" Valid="Y" Default="" Encrypt="" >
+			<O1 Name="isCd" Align="Left" Desc="종목코드 IS_CD" Journal="N" Pad="SPC" Size="6" SizeEN="6" SizeKR="6" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="filler" Align="Left" Desc="FILLER FILLER" Journal="N" Pad="SPC" Size="2" SizeEN="2" SizeKR="2" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="tlMrk" Align="Left" Desc="총점수 TL_MRK" Journal="N" Pad="SPC" Size="9" SizeEN="9" SizeKR="9" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="chgMrk" Align="Left" Desc="변동점수 CHG_MRK" Journal="N" Pad="SPC" Size="6" SizeEN="6" SizeKR="6" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="bscMrk" Align="Left" Desc="기초점수 BSC_MRK" Journal="N" Pad="SPC" Size="6" SizeEN="6" SizeKR="6" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="bkngMrk" Align="Left" Desc="지지점수 BKNG_MRK" Journal="N" Pad="SPC" Size="6" SizeEN="6" SizeKR="6" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="strmMrk" Align="Left" Desc="단기점수 STRM_MRK" Journal="N" Pad="SPC" Size="6" SizeEN="6" SizeKR="6" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="ltrmMrk" Align="Left" Desc="장기점수 LTRM_MRK" Journal="N" Pad="SPC" Size="6" SizeEN="6" SizeKR="6" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="betaP4" Align="Left" Desc="베타P4 BETA_P4" Journal="N" Pad="SPC" Size="13" SizeEN="13" SizeKR="13" format="double" Spec="char" portion="4" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="upStrn" Align="Left" Desc="상승강도 UP_STRN" Journal="N" Pad="SPC" Size="6" SizeEN="6" SizeKR="6" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="dy5DsprtDgr" Align="Left" Desc="5일이격도 DY5_DSPRT_DGR" Journal="N" Pad="SPC" Size="6" SizeEN="6" SizeKR="6" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="dy20DsprtDgr" Align="Left" Desc="20일이격도 DY20_DSPRT_DGR" Journal="N" Pad="SPC" Size="6" SizeEN="6" SizeKR="6" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="dy60DsprtDgr" Align="Left" Desc="60일이격도 DY60_DSPRT_DGR" Journal="N" Pad="SPC" Size="6" SizeEN="6" SizeKR="6" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="dlAmt" Align="Left" Desc="거래금액 DL_AMT" Journal="N" Pad="SPC" Size="12" SizeEN="12" SizeKR="12" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="dlRt" Align="Left" Desc="거래비율 DL_RT" Journal="N" Pad="SPC" Size="6" SizeEN="6" SizeKR="6" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="vlmDrctg" Align="Left" Desc="거래량지표 VLM_DRCTG" Journal="N" Pad="SPC" Size="6" SizeEN="6" SizeKR="6" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="fgnrNtB" Align="Left" Desc="외국인순매수 FGNR_NT_B" Journal="N" Pad="SPC" Size="12" SizeEN="12" SizeKR="12" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="fgnrAcmlNtB" Align="Left" Desc="외국인누적순매수 FGNR_ACML_NT_B" Journal="N" Pad="SPC" Size="6" SizeEN="6" SizeKR="6" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="ognNtB" Align="Left" Desc="기관순매수 OGN_NT_B" Journal="N" Pad="SPC" Size="12" SizeEN="12" SizeKR="12" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="ognAcmlNtB" Align="Left" Desc="기관누적순매수 OGN_ACML_NT_B" Journal="N" Pad="SPC" Size="6" SizeEN="6" SizeKR="6" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="strmPrftGrwthR" Align="Left" Desc="단기이익성장율 STRM_PRFT_GRWTH_R" Journal="N" Pad="SPC" Size="6" SizeEN="6" SizeKR="6" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="bsnssPrftGrwthR" Align="Left" Desc="영업이익성장율 BSNSS_PRFT_GRWTH_R" Journal="N" Pad="SPC" Size="6" SizeEN="6" SizeKR="6" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="tprdBsnssPrftGrwthR" Align="Left" Desc="당기영업이익성장율 TPRD_BSNSS_PRFT_GRWTH_R" Journal="N" Pad="SPC" Size="6" SizeEN="6" SizeKR="6" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="saleAmtGrwthR" Align="Left" Desc="매출액성장율 SALE_AMT_GRWTH_R" Journal="N" Pad="SPC" Size="6" SizeEN="6" SizeKR="6" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="roe" Align="Left" Desc="ROE ROE" Journal="N" Pad="SPC" Size="6" SizeEN="6" SizeKR="6" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="per" Align="Left" Desc="PER PER" Journal="N" Pad="SPC" Size="6" SizeEN="6" SizeKR="6" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="pbr" Align="Left" Desc="PBR PBR" Journal="N" Pad="SPC" Size="6" SizeEN="6" SizeKR="6" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="filler1" Align="Left" Desc="FILLER1 FILLER1" Journal="N" Pad="SPC" Size="16" SizeEN="16" SizeKR="16" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		</O>
+	</Output>
+</Tkb_VIS50200>

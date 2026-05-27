@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<Tkb_SUQM3598 error="false">
+	<Name>SUQM3598</Name>
+	<Desc>수요예측 신청 및 배정현황 조회</Desc>
+	<Code></Code>
+	<Route>SUQM3598</Route>
+	<base21></base21>
+	<blocktype></blocktype>
+	<attytype></attytype>
+	<headtype></headtype>
+	<Journal>true</Journal>
+	<screenid>9999</screenid>
+	<Mid>false</Mid>
+	<Processor_info>hts</Processor_info>
+	<Tr_info>OPER01</Tr_info>
+	<Page_num>3598</Page_num>
+	<HostExpireTime >15000</HostExpireTime>
+	<Input iName="" >
+		<I Name="inq_clsf" Desc="조회구분" Align="Left" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" Spec="char" format="char" Default="" IOType="Field" portion="0" UpperCase="N" Valid="Y" Encrypt=""/>
+		<I Name="sbs_is_cd" Desc="청약종목코드" Align="Left" Journal="N" Pad="SPC" Size="12" SizeEN="12" SizeKR="12" Spec="char" format="char" Default="" IOType="Field" portion="0" UpperCase="N" Valid="Y" Encrypt=""/>
+		<I Name="po_typ_cd" Desc="공모유형코드" Align="Left" Journal="N" Pad="SPC" Size="2" SizeEN="2" SizeKR="2" Spec="char" format="char" Default="" IOType="Field" portion="0" UpperCase="N" Valid="Y" Encrypt=""/>
+		<I Name="mn_dl_dprt_cd" Desc="주거래부점코드" Align="Left" Journal="N" Pad="SPC" Size="3" SizeEN="3" SizeKR="3" Spec="char" format="char" Default="" IOType="Field" portion="0" UpperCase="N" Valid="Y" Encrypt=""/>
+		<I Name="gnl_ac_no" Desc="종합계좌번호" Align="Left" Journal="N" Pad="SPC" Size="9" SizeEN="9" SizeKR="9" Spec="char" format="char" Default="" IOType="Field" portion="0" UpperCase="N" Valid="Y" Encrypt=""/>
+		<I Name="gds_no" Desc="상품번호" Align="Left" Journal="N" Pad="SPC" Size="2" SizeEN="2" SizeKR="2" Spec="char" format="char" Default="" IOType="Field" portion="0" UpperCase="N" Valid="Y" Encrypt=""/>
+		<I Name="nxt_key" Desc="다음키" Align="Left" Journal="N" Pad="SPC" Size="40" SizeEN="40" SizeKR="40" Spec="char" format="char" Default="" IOType="Field" portion="0" UpperCase="N" Valid="Y" Encrypt=""/>
+	</Input>
+	<Output oName="" >
+		<O Name="o_lngth" Align="Left" Desc="출길이" Journal="N" Pad="SPC" Size="5" SizeEN="5" SizeKR="5" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="o_clsf" Align="Left" Desc="출구분" Journal="N" Pad="SPC" Size="2" SizeEN="2" SizeKR="2" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="o_msg" Align="Left" Desc="출메시지" Journal="N" Pad="SPC" Size="80" SizeEN="80" SizeKR="80" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="nxt_key" Align="Left" Desc="다음키" Journal="N" Pad="SPC" Size="40" SizeEN="40" SizeKR="40" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="grid_cnt" Align="Left" Desc="그리드건수" Journal="N" Pad="SPC" Size="4" SizeEN="4" SizeKR="4" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="Record1" Align="Left" Repeat="10" Desc="" Journal="N" Pad="SPC" Size="10" SizeEN="10" SizeKR="10" Spec="struct" IOType="Record" UpperCase="N" Valid="Y" Default="" Encrypt="" >
+		    <O1 Name="sbs_is_cd" Align="Left" Desc="청약종목코드" Journal="N" Pad="SPC" Size="12" SizeEN="12" SizeKR="12" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="sbs_is_nm" Align="Left" Desc="청약종목명" Journal="N" Pad="SPC" Size="40" SizeEN="40" SizeKR="40" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="po_typ_nm" Align="Left" Desc="공모유형명" Journal="N" Pad="SPC" Size="40" SizeEN="40" SizeKR="40" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="ogn_nm" Align="Left" Desc="기관명" Journal="N" Pad="SPC" Size="40" SizeEN="40" SizeKR="40" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="bkbd_ogn_ccd" Align="Left" Desc="수요예측기관구분코드" Journal="N" Pad="SPC" Size="2" SizeEN="2" SizeKR="2" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="bkbd_ogn_ccd_nm" Align="Left" Desc="수요예측기관구분코드명" Journal="N" Pad="SPC" Size="40" SizeEN="40" SizeKR="40" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="rnmcno" Align="Left" Desc="실명확인번호" Journal="N" Pad="SPC" Size="20" SizeEN="20" SizeKR="20" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="old_ac_no" Align="Left" Desc="구계좌번호" Journal="N" Pad="SPC" Size="11" SizeEN="11" SizeKR="11" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="gds_typ_nm" Align="Left" Desc="상품유형명" Journal="N" Pad="SPC" Size="20" SizeEN="20" SizeKR="20" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="gnl_ac_no" Align="Left" Desc="종합계좌번호" Journal="N" Pad="SPC" Size="9" SizeEN="9" SizeKR="9" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="gds_no" Align="Left" Desc="상품번호" Journal="N" Pad="SPC" Size="2" SizeEN="2" SizeKR="2" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="cs_nm" Align="Left" Desc="고객명" Journal="N" Pad="SPC" Size="30" SizeEN="30" SizeKR="30" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="cptl_amt" Align="Left" Desc="자본금" Journal="N" Pad="SPC" Size="18" SizeEN="18" SizeKR="18" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="slf_cptl_amt" Align="Left" Desc="자기자본금" Journal="N" Pad="SPC" Size="18" SizeEN="18" SizeKR="18" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="est_amt" Align="Left" Desc="설정금액" Journal="N" Pad="SPC" Size="18" SizeEN="18" SizeKR="18" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="asts_tl_amt" Align="Left" Desc="자산총액" Journal="N" Pad="SPC" Size="18" SizeEN="18" SizeKR="18" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="bkbd_oblg_hld_prd" Align="Left" Desc="수요예측의무보유기간" Journal="N" Pad="SPC" Size="10" SizeEN="10" SizeKR="10" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="prc_apnt_f_nm" Align="Left" Desc="가격지정여부명" Journal="N" Pad="SPC" Size="6" SizeEN="6" SizeKR="6" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="rqst_prc" Align="Left" Desc="신청가격" Journal="N" Pad="SPC" Size="18" SizeEN="18" SizeKR="18" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="rqst_q" Align="Left" Desc="신청수량" Journal="N" Pad="SPC" Size="18" SizeEN="18" SizeKR="18" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="rqst_amt" Align="Left" Desc="신청금액" Journal="N" Pad="SPC" Size="18" SizeEN="18" SizeKR="18" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="lmt_amt" Align="Left" Desc="한도금액" Journal="N" Pad="SPC" Size="18" SizeEN="18" SizeKR="18" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="rqst_cnt" Align="Left" Desc="신청건수" Journal="N" Pad="SPC" Size="9" SizeEN="9" SizeKR="9" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="alct_q" Align="Left" Desc="배정수량" Journal="N" Pad="SPC" Size="18" SizeEN="18" SizeKR="18" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="rl_alct_amt" Align="Left" Desc="실배정금액" Journal="N" Pad="SPC" Size="18" SizeEN="18" SizeKR="18" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="alct_rslt_cnfr_f_nm" Align="Left" Desc="배정결과확인여부명" Journal="N" Pad="SPC" Size="10" SizeEN="10" SizeKR="10" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="alct_rslt_cnfr_dt" Align="Left" Desc="배정결과확인일자" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="alct_rslt_cnfr_tm" Align="Left" Desc="배정결과확인시간" Journal="N" Pad="SPC" Size="6" SizeEN="6" SizeKR="6" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="chrg_p_nm" Align="Left" Desc="담당자명" Journal="N" Pad="SPC" Size="40" SizeEN="40" SizeKR="40" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="wr_tel_no" Align="Left" Desc="유선전화번호" Journal="N" Pad="SPC" Size="20" SizeEN="20" SizeKR="20" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="mbl_tel_no" Align="Left" Desc="휴대전화번호" Journal="N" Pad="SPC" Size="16" SizeEN="16" SizeKR="16" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="agrmt_f" Align="Left" Desc="동의여부" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="email_addr" Align="Left" Desc="이메일주소" Journal="N" Pad="SPC" Size="50" SizeEN="50" SizeKR="50" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="rgst_dt" Align="Left" Desc="등록일자" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="rgst_tm" Align="Left" Desc="등록시간" Journal="N" Pad="SPC" Size="6" SizeEN="6" SizeKR="6" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="ind_typ_clct_spec_cd" Align="Left" Desc="업종모집형태코드" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="ind_typ_clct_spec_cd_nm" Align="Left" Desc="업종모집형태코드명" Journal="N" Pad="SPC" Size="10" SizeEN="10" SizeKR="10" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="ind_typ_rgst_dt" Align="Left" Desc="업종등록일자" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="dscrt_ctrt_ccls_dt" Align="Left" Desc="일임계약체결일자" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="dy_avr_val_amt" Align="Left" Desc="일평균평가금액" Journal="N" Pad="SPC" Size="18" SizeEN="18" SizeKR="18" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="rltns_udwrt_prsn_app_f" Align="Left" Desc="관계인수인해당여부" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="rltns_udwrt_prsn_app_f_nm" Align="Left" Desc="관계인수인해당여부명" Journal="N" Pad="SPC" Size="6" SizeEN="6" SizeKR="6" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="stk_amt_pymt_amt" Align="Left" Desc="주금납입금액" Journal="N" Pad="SPC" Size="18" SizeEN="18" SizeKR="18" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="invste_fnd_asts_tam" Align="Left" Desc="피투자펀드자산총금액" Journal="N" Pad="SPC" Size="18" SizeEN="18" SizeKR="18" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="bkbd_wcpy_ccdnm" Align="Left" Desc="수요예측운용사구분코드명" Journal="N" Pad="SPC" Size="12" SizeEN="12" SizeKR="12" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="bkbd_cmns_path" Align="Left" Desc="수요예측공통경로" Journal="N" Pad="SPC" Size="50" SizeEN="50" SizeKR="50" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="bkbd_bbgtt_path" Align="Left" Desc="수요예측수요예측총괄집계표경로" Journal="N" Pad="SPC" Size="50" SizeEN="50" SizeKR="50" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="bkbd_cmlt_path" Align="Left" Desc="수요예측확약서경로" Journal="N" Pad="SPC" Size="50" SizeEN="50" SizeKR="50" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="fs_path" Align="Left" Desc="재무제표경로" Journal="N" Pad="SPC" Size="50" SizeEN="50" SizeKR="50" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="invst_dscrt_cmlt_path" Align="Left" Desc="투자일임확약서경로" Journal="N" Pad="SPC" Size="50" SizeEN="50" SizeKR="50" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="invst_rcf_path" Align="Left" Desc="투자등록증경로" Journal="N" Pad="SPC" Size="50" SizeEN="50" SizeKR="50" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="rudps_cmlt_path" Align="Left" Desc="관계인수인확약서경로" Journal="N" Pad="SPC" Size="50" SizeEN="50" SizeKR="50" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="pymt_cpcty_cmlt_path" Align="Left" Desc="납입능력확약서경로" Journal="N" Pad="SPC" Size="50" SizeEN="50" SizeKR="50" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="etc_path" Align="Left" Desc="기타경로" Journal="N" Pad="SPC" Size="50" SizeEN="50" SizeKR="50" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		</O>
+	</Output>
+</Tkb_SUQM3598>

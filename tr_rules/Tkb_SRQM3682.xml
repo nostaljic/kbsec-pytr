@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<Tkb_SRQM3682 error="false">
+	<Name>SRQM3682</Name>
+	<Desc>해외주식CA내역조회(로이터)</Desc>
+	<Code></Code>
+	<Route>SRQM3682</Route>
+	<base21></base21>
+	<blocktype></blocktype>
+	<attytype></attytype>
+	<headtype></headtype>
+	<Journal>true</Journal>
+	<screenid>9999</screenid>
+	<Mid>false</Mid>
+	<Processor_info>hts</Processor_info>
+	<Tr_info>OPER01</Tr_info>
+	<Page_num>3682</Page_num>
+	<HostExpireTime >15000</HostExpireTime>
+	<Input iName="" >
+		<I Name="symbl_is_cd" Desc="심볼종목코드" Align="Left" Journal="N" Pad="SPC" Size="12" SizeEN="12" SizeKR="12" Spec="char" format="char" Default="" IOType="Field" portion="0" UpperCase="N" Valid="Y" Encrypt=""/>
+		<I Name="prd_clsf" Desc="기간구분" Align="Left" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" Spec="char" format="char" Default="" IOType="Field" portion="0" UpperCase="N" Valid="Y" Encrypt=""/>
+		<I Name="ogn_clsf" Desc="기관구분" Align="Left" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" Spec="char" format="char" Default="1" IOType="Field" portion="0" UpperCase="N" Valid="Y" Encrypt=""/>
+		<I Name="inq_strt_dt" Desc="조회시작일자" Align="Left" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" Spec="char" format="char" Default="" IOType="Field" portion="0" UpperCase="N" Valid="Y" Encrypt=""/>
+		<I Name="inq_end_dt" Desc="조회종료일자" Align="Left" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" Spec="char" format="char" Default="" IOType="Field" portion="0" UpperCase="N" Valid="Y" Encrypt=""/>
+		<I Name="ntn_cd" Desc="국가코드" Align="Left" Journal="N" Pad="SPC" Size="2" SizeEN="2" SizeKR="2" Spec="char" format="char" Default="" IOType="Field" portion="0" UpperCase="N" Valid="Y" Encrypt=""/>
+		<I Name="rtrs_pba_ccd" Desc="로이터공시구분코드" Align="Left" Journal="N" Pad="SPC" Size="20" SizeEN="20" SizeKR="20" Spec="char" format="char" Default="" IOType="Field" portion="0" UpperCase="N" Valid="Y" Encrypt=""/>
+		<I Name="nxt_key" Desc="다음키" Align="Left" Journal="N" Pad="SPC" Size="50" SizeEN="50" SizeKR="50" Spec="char" format="char" Default="" IOType="Field" portion="0" UpperCase="N" Valid="Y" Encrypt=""/>
+	</Input>
+	<Output oName="" >
+		<O Name="o_lngth" Align="Left" Desc="출길이" Journal="N" Pad="SPC" Size="5" SizeEN="5" SizeKR="5" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="o_clsf" Align="Left" Desc="출구분" Journal="N" Pad="SPC" Size="2" SizeEN="2" SizeKR="2" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="o_msg" Align="Left" Desc="출메시지" Journal="N" Pad="SPC" Size="80" SizeEN="80" SizeKR="80" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="nxt_key" Align="Left" Desc="다음키" Journal="N" Pad="SPC" Size="50" SizeEN="50" SizeKR="50" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="grid_cnt" Align="Left" Desc="그리드건수" Journal="N" Pad="SPC" Size="4" SizeEN="4" SizeKR="4" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="out" Align="Left" Repeat="20" Desc="" Journal="N" Pad="SPC" Size="20" SizeEN="20" SizeKR="20" Spec="struct" IOType="Record" UpperCase="N" Valid="Y" Default="" Encrypt="" >
+		    <O1 Name="symbl_is_cd" Align="Left" Desc="심볼종목코드" Journal="N" Pad="SPC" Size="12" SizeEN="12" SizeKR="12" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="rtrs_pba_ccd" Align="Left" Desc="로이터공시구분코드" Journal="N" Pad="SPC" Size="20" SizeEN="20" SizeKR="20" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="sq" Align="Left" Desc="일련번호" Journal="N" Pad="SPC" Size="12" SizeEN="12" SizeKR="12" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="rtrs_cd" Align="Left" Desc="로이터코드" Journal="N" Pad="SPC" Size="20" SizeEN="20" SizeKR="20" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="rtrs_frgn_stk_krx_cd" Align="Left" Desc="로이터해외주식거래소코드" Journal="N" Pad="SPC" Size="10" SizeEN="10" SizeKR="10" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="stnd_is_cd" Align="Left" Desc="표준종목코드" Journal="N" Pad="SPC" Size="12" SizeEN="12" SizeKR="12" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="is_nm" Align="Left" Desc="종목명" Journal="N" Pad="SPC" Size="40" SizeEN="40" SizeKR="40" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="iso_cd" Align="Left" Desc="ISO코드" Journal="N" Pad="SPC" Size="2" SizeEN="2" SizeKR="2" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="rtrs_pba_ccd_nm" Align="Left" Desc="로이터공시구분코드명" Journal="N" Pad="SPC" Size="40" SizeEN="40" SizeKR="40" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="pba_dt" Align="Left" Desc="공시일자" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="std_dt" Align="Left" Desc="기준일자" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="rgt_dwn_ocrnc_dt" Align="Left" Desc="권리락발생일자" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="dl_rcg_dt" Align="Left" Desc="거래승인일자" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="fcscrt_sbs_prc_p6" Align="Left" Desc="외화증권청약가격P6" Journal="N" Pad="SPC" Size="18" SizeEN="18" SizeKR="18" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="py_dt" Align="Left" Desc="지급일자" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="sbs_clsng_dt" Align="Left" Desc="청약마감일자" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="sbs_crncy_cd" Align="Left" Desc="청약통화코드" Journal="N" Pad="SPC" Size="3" SizeEN="3" SizeKR="3" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="rtrs_rglt_fctr_p6" Align="Left" Desc="로이터조정계수P6" Journal="N" Pad="SPC" Size="18" SizeEN="18" SizeKR="18" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="oldstk_rt_p6" Align="Left" Desc="구주비율P6" Journal="N" Pad="SPC" Size="18" SizeEN="18" SizeKR="18" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="sbs_strt_dt" Align="Left" Desc="청약시작일자" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="dl_end_dt" Align="Left" Desc="거래종료일자" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="nwstk_rt_p6" Align="Left" Desc="신주비율P6" Journal="N" Pad="SPC" Size="18" SizeEN="18" SizeKR="18" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="dl_strt_dt" Align="Left" Desc="거래시작일자" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="hndl_dy_tm" Align="Left" Desc="처리일시" Journal="N" Pad="SPC" Size="14" SizeEN="14" SizeKR="14" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="frgn_dvdnd_amt_p6" Align="Left" Desc="해외배당금액P6" Journal="N" Pad="SPC" Size="18" SizeEN="18" SizeKR="18" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="dvdnd_crncy_cd" Align="Left" Desc="배당통화코드" Journal="N" Pad="SPC" Size="3" SizeEN="3" SizeKR="3" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="uptb_is_cd" Align="Left" Desc="변경전종목코드" Journal="N" Pad="SPC" Size="12" SizeEN="12" SizeKR="12" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="upta_is_cd" Align="Left" Desc="변경후종목코드" Journal="N" Pad="SPC" Size="12" SizeEN="12" SizeKR="12" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="upta_symbl_is_cd" Align="Left" Desc="변경후심볼종목코드" Journal="N" Pad="SPC" Size="12" SizeEN="12" SizeKR="12" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="rtrs_upt_clsf" Align="Left" Desc="로이터변경구분" Journal="N" Pad="SPC" Size="10" SizeEN="10" SizeKR="10" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="upta_rtrs_cd" Align="Left" Desc="변경후로이터코드" Journal="N" Pad="SPC" Size="20" SizeEN="20" SizeKR="20" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		</O>
+	</Output>
+</Tkb_SRQM3682>

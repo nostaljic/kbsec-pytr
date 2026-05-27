@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<Tkb_GSA10300 error="false">
+	<Name>GSA10300</Name>
+	<Desc> (REFINITIVE)기업개요</Desc>
+	<Code></Code>
+	<Route>GSA10300</Route>
+	<base21></base21>
+	<blocktype></blocktype>
+	<attytype>attr;</attytype>
+	<headtype></headtype>
+	<Journal>true</Journal>
+	<screenid>0300</screenid>
+	<Mid></Mid>
+	<Processor_info>hts</Processor_info>
+	<Tr_info>NIVS01</Tr_info>
+	<Page_num>0300</Page_num>
+	<HostExpireTime>15000</HostExpireTime>
+	<Input iName="" >
+		<I Name="krxCd" Align="Left" Desc="거래소코드 KRX_CD" Journal="N" Pad="SPC" Size="3" SizeEN="3" SizeKR="3" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="_krxCd" Align="Left" Desc="_거래소코드 KRX_CD" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="isCd" Align="Left" Desc="종목코드 IS_CD" Journal="N" Pad="SPC" Size="16" SizeEN="16" SizeKR="16" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="_isCd" Align="Left" Desc="_종목코드 IS_CD" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+	</Input>
+	<Output oName="" >
+		<O Name="lngth" Align="Left" Desc="길이C5" Journal="N" Pad="SPC" Size="5" SizeEN="5" SizeKR="5" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="clsfP" Align="Left" Desc="구분자_C2" Journal="N" Pad="SPC" Size="2" SizeEN="2" SizeKR="2" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="msg" Align="Left" Desc="메시지_C80" Journal="N" Pad="SPC" Size="80" SizeEN="80" SizeKR="80" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="RecordSize" Align="Left" Desc="레코드길이" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="krxCd" Align="Left" Desc="거래소코드 KRX_CD" Journal="N" Pad="SPC" Size="3" SizeEN="3" SizeKR="3" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_krxCd" Align="Left" Desc="_거래소코드 KRX_CD" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="isCd" Align="Left" Desc="종목코드 IS_CD" Journal="N" Pad="SPC" Size="16" SizeEN="16" SizeKR="16" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_isCd" Align="Left" Desc="_종목코드 IS_CD" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="indTypCd" Align="Left" Desc="업종코드 IND_TYP_CD" Journal="N" Pad="SPC" Size="4" SizeEN="4" SizeKR="4" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_indTypCd" Align="Left" Desc="_업종코드 IND_TYP_CD" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="indTypNm" Align="Left" Desc="업종명 IND_TYP_NM" Journal="N" Pad="SPC" Size="64" SizeEN="64" SizeKR="64" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_indTypNm" Align="Left" Desc="_업종명 IND_TYP_NM" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="opnPrcTlAmt" Align="Left" Desc="시가총액 OPN_PRC_TL_AMT" Journal="N" Pad="SPC" Size="15" SizeEN="15" SizeKR="15" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_opnPrcTlAmt" Align="Left" Desc="_시가총액 OPN_PRC_TL_AMT" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="bsnsOutlnEng" Align="Left" Desc="사업개요영문 BSNS_OUTLN_ENG" Journal="N" Pad="SPC" Size="4000" SizeEN="4000" SizeKR="4000" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_bsnsOutlnEng" Align="Left" Desc="_사업개요영문 BSNS_OUTLN_ENG" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="bsnsOutlnHngl" Align="Left" Desc="사업개요한글 BSNS_OUTLN_HNGL" Journal="N" Pad="SPC" Size="4000" SizeEN="4000" SizeKR="4000" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_bsnsOutlnHngl" Align="Left" Desc="_사업개요한글 BSNS_OUTLN_HNGL" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="cmpnyNmEng" Align="Left" Desc="회사명영문 CMPNY_NM_ENG" Journal="N" Pad="SPC" Size="200" SizeEN="200" SizeKR="200" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_cmpnyNmEng" Align="Left" Desc="_회사명영문 CMPNY_NM_ENG" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="cmpnyNmHngl" Align="Left" Desc="회사명한글 CMPNY_NM_HNGL" Journal="N" Pad="SPC" Size="200" SizeEN="200" SizeKR="200" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_cmpnyNmHngl" Align="Left" Desc="_회사명한글 CMPNY_NM_HNGL" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="wrkrC" Align="Left" Desc="근로자수 WRKR_C" Journal="N" Pad="SPC" Size="10" SizeEN="10" SizeKR="10" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_wrkrC" Align="Left" Desc="_근로자수 WRKR_C" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="rprstPNm" Align="Left" Desc="대표자명 RPRST_P_NM" Journal="N" Pad="SPC" Size="50" SizeEN="50" SizeKR="50" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_rprstPNm" Align="Left" Desc="_대표자명 RPRST_P_NM" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="mofcAddr" Align="Left" Desc="본사주소 MOFC_ADDR" Journal="N" Pad="SPC" Size="150" SizeEN="150" SizeKR="150" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_mofcAddr" Align="Left" Desc="_본사주소 MOFC_ADDR" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="mofcCity" Align="Left" Desc="본사도시 MOFC_CITY" Journal="N" Pad="SPC" Size="100" SizeEN="100" SizeKR="100" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_mofcCity" Align="Left" Desc="_본사도시 MOFC_CITY" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="mofcNtn" Align="Left" Desc="본사국가 MOFC_NTN" Journal="N" Pad="SPC" Size="100" SizeEN="100" SizeKR="100" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_mofcNtn" Align="Left" Desc="_본사국가 MOFC_NTN" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="telNoNtn" Align="Left" Desc="전화번호국가 TEL_NO_NTN" Journal="N" Pad="SPC" Size="20" SizeEN="20" SizeKR="20" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_telNoNtn" Align="Left" Desc="_전화번호국가 TEL_NO_NTN" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="telNoCity" Align="Left" Desc="전화번호도시 TEL_NO_CITY" Journal="N" Pad="SPC" Size="20" SizeEN="20" SizeKR="20" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_telNoCity" Align="Left" Desc="_전화번호도시 TEL_NO_CITY" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="telNo" Align="Left" Desc="전화번호 TEL_NO" Journal="N" Pad="SPC" Size="20" SizeEN="20" SizeKR="20" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_telNo" Align="Left" Desc="_전화번호 TEL_NO" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="hmpgAddr" Align="Left" Desc="홈페이지주소 HMPG_ADDR" Journal="N" Pad="SPC" Size="200" SizeEN="200" SizeKR="200" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_hmpgAddr" Align="Left" Desc="_홈페이지주소 HMPG_ADDR" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="indstLdvd" Align="Left" Desc="산업대분류 INDST_LDVD" Journal="N" Pad="SPC" Size="100" SizeEN="100" SizeKR="100" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_indstLdvd" Align="Left" Desc="_산업대분류 INDST_LDVD" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="fnclCrncyCd" Align="Left" Desc="재무통화코드 FNCL_CRNCY_CD" Journal="N" Pad="SPC" Size="3" SizeEN="3" SizeKR="3" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_fnclCrncyCd" Align="Left" Desc="_재무통화코드 FNCL_CRNCY_CD" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+	</Output>
+</Tkb_GSA10300>

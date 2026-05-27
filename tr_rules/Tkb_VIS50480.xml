@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<Tkb_VIS50480 error="false">
+	<Name>VIS50480</Name>
+	<Desc> 이슈제목조회-종합/종목기간별(VIS50480)</Desc>
+	<Code></Code>
+	<Route>VIS50480</Route>
+	<base21></base21>
+	<blocktype></blocktype>
+	<attytype></attytype>
+	<headtype></headtype>
+	<Journal>true</Journal>
+	<screenid>0480</screenid>
+	<Mid></Mid>
+	<Processor_info>hts</Processor_info>
+	<Tr_info>NIVS01</Tr_info>
+	<Page_num>0480</Page_num>
+	<HostExpireTime>15000</HostExpireTime>
+	<Input iName="" >
+		<I Name="inqClsf" Align="Left" Desc="조회구분 INQ_CLSF (0:종합 1:종목 2:섹터)" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="srchInptVl" Align="Left" Desc="검색입력값 SRCH_INPT_VL (검색어 입력)" Journal="N" Pad="SPC" Size="20" SizeEN="20" SizeKR="20" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="isCd" Align="Left" Desc="종목코드 IS_CD" Journal="N" Pad="SPC" Size="6" SizeEN="6" SizeKR="6" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="strtDt" Align="Left" Desc="시작일자 STRT_DT (시작일자)" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="endDt" Align="Left" Desc="종료일자 END_DT (종료일자)" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="nxtKey" Align="Right" Desc="다음키 NXT_KEY" Journal="N" Pad="0" Size="7" SizeEN="7" SizeKR="7" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="ctgryC" Align="Right" Desc="카테고리수 CTGRY_C (입력카테고리갯수)" Journal="N" Pad="0" Size="3" SizeEN="3" SizeKR="3" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="in2" Align="Left" Desc="" Journal="N" Pad="SPC" Size="100" SizeEN="100" SizeKR="100" Spec="struct" IOType="Record" UpperCase="N" Valid="Y" Default="" Encrypt="" >
+			<I1 Name="ctgryCd" Align="Left" Desc="카테고리코드 CTGRY_CD" Journal="N" Pad="SPC" Size="3" SizeEN="3" SizeKR="3" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		</I>
+	</Input>
+	<Output oName="" >
+		<O Name="lngth" Align="Left" Desc="길이C5" Journal="N" Pad="SPC" Size="5" SizeEN="5" SizeKR="5" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="clsfP" Align="Left" Desc="구분자_C2" Journal="N" Pad="SPC" Size="2" SizeEN="2" SizeKR="2" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="msg" Align="Left" Desc="메시지_C80" Journal="N" Pad="SPC" Size="80" SizeEN="80" SizeKR="80" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="RecordSize" Align="Left" Desc="레코드길이" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="nxtKey" Align="Left" Desc="다음키 NXT_KEY" Journal="N" Pad="SPC" Size="7" SizeEN="7" SizeKR="7" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="filler" Align="Left" Desc="FILLER FILLER" Journal="N" Pad="SPC" Size="4" SizeEN="4" SizeKR="4" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="out2_RecordSize" Align="Left" Desc="out2_레코드길이" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="out2" Repeat="0" Align="Left" Desc="" Journal="N" Pad="SPC" Size="0" SizeEN="0" SizeKR="0" Spec="struct" IOType="Record" UpperCase="N" Valid="Y" Default="" Encrypt="" >
+			<O1 Name="issueKey" Align="Left" Desc="이슈키 ISSUE_KEY" Journal="N" Pad="SPC" Size="20" SizeEN="20" SizeKR="20" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="dt" Align="Left" Desc="일자 DT" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="title" Align="Left" Desc="제목 TITLE" Journal="N" Pad="SPC" Size="80" SizeEN="80" SizeKR="80" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="isCcd" Align="Left" Desc="종목구분코드 IS_CCD (1:SPOT 2:섹터)" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="isCd" Align="Left" Desc="종목코드 IS_CD" Journal="N" Pad="SPC" Size="6" SizeEN="6" SizeKR="6" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="isNm" Align="Left" Desc="종목명 IS_NM" Journal="N" Pad="SPC" Size="40" SizeEN="40" SizeKR="40" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		</O>
+	</Output>
+</Tkb_VIS50480>

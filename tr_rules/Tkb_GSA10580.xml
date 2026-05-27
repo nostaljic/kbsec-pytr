@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<Tkb_GSA10580 error="false">
+	<Name>GSA10580</Name>
+	<Desc> 재무정보(WTS)(GSA10580)</Desc>
+	<Code></Code>
+	<Route>GSA10580</Route>
+	<base21></base21>
+	<blocktype></blocktype>
+	<attytype>attr;</attytype>
+	<headtype></headtype>
+	<Journal>true</Journal>
+	<screenid>0580</screenid>
+	<Mid></Mid>
+	<Processor_info>hts</Processor_info>
+	<Tr_info>NIVS01</Tr_info>
+	<Page_num>0580</Page_num>
+	<HostExpireTime>15000</HostExpireTime>
+	<Input iName="" >
+		<I Name="krxCd" Align="Left" Desc="거래소코드 KRX_CD" Journal="N" Pad="SPC" Size="3" SizeEN="3" SizeKR="3" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="_krxCd" Align="Left" Desc="_거래소코드 KRX_CD" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="isCd" Align="Left" Desc="종목코드 IS_CD" Journal="N" Pad="SPC" Size="16" SizeEN="16" SizeKR="16" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="_isCd" Align="Left" Desc="_종목코드 IS_CD" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="rprtCcd" Align="Left" Desc="보고서구분코드 RPRT_CCD (01:재무제표, 02:평가지표, 03:실적)" Journal="N" Pad="SPC" Size="2" SizeEN="2" SizeKR="2" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="_rprtCcd" Align="Left" Desc="_보고서구분코드 RPRT_CCD (01:재무제표, 02:평가지표, 03:실적)" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="clsacCcd" Align="Left" Desc="결산구분코드 CLSAC_CCD (1:연간, 2:분기)" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="_clsacCcd" Align="Left" Desc="_결산구분코드 CLSAC_CCD (1:연간, 2:분기)" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+	</Input>
+	<Output oName="" >
+		<O Name="lngth" Align="Left" Desc="길이C5" Journal="N" Pad="SPC" Size="5" SizeEN="5" SizeKR="5" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="clsfP" Align="Left" Desc="구분자_C2" Journal="N" Pad="SPC" Size="2" SizeEN="2" SizeKR="2" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="msg" Align="Left" Desc="메시지_C80" Journal="N" Pad="SPC" Size="80" SizeEN="80" SizeKR="80" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="RecordSize" Align="Left" Desc="레코드길이" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="inqCnt" Align="Left" Desc="조회건수 INQ_CNT" Journal="N" Pad="SPC" Size="4" SizeEN="4" SizeKR="4" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_inqCnt" Align="Left" Desc="_조회건수 INQ_CNT" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="out2_RecordSize" Align="Left" Desc="out2_레코드길이" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="out2" Repeat="0" Align="Left" Desc="" Journal="N" Pad="SPC" Size="0" SizeEN="0" SizeKR="0" Spec="struct" IOType="Record" UpperCase="N" Valid="Y" Default="" Encrypt="" >
+			<O1 Name="actsYrMm" Align="Left" Desc="회계년월 ACTS_YR_MM" Journal="N" Pad="SPC" Size="6" SizeEN="6" SizeKR="6" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_actsYrMm" Align="Left" Desc="_회계년월 ACTS_YR_MM" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="actCdNm" Align="Left" Desc="계정코드명 ACT_CD_NM" Journal="N" Pad="SPC" Size="60" SizeEN="60" SizeKR="60" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_actCdNm" Align="Left" Desc="_계정코드명 ACT_CD_NM" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="fsAmtP2" Align="Left" Desc="재무제표금액P2 FS_AMT_P2" Journal="N" Pad="SPC" Size="17" SizeEN="17" SizeKR="17" format="double" Spec="char" portion="2" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_fsAmtP2" Align="Left" Desc="_재무제표금액P2 FS_AMT_P2" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="cmprRP2" Align="Left" Desc="대비율P2 CMPR_R_P2" Journal="N" Pad="SPC" Size="9" SizeEN="9" SizeKR="9" format="double" Spec="char" portion="2" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_cmprRP2" Align="Left" Desc="_대비율P2 CMPR_R_P2" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		</O>
+	</Output>
+</Tkb_GSA10580>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<Tkb_NCAM4225 error="false">
+	<Name>NCAM4225</Name>
+	<Desc>임직원자기계좌등록</Desc>
+	<Code></Code>
+	<Route>NCAM4225</Route>
+	<base21></base21>
+	<blocktype></blocktype>
+	<attytype></attytype>
+	<headtype></headtype>
+	<Journal>true</Journal>
+	<screenid>9999</screenid>
+	<Mid>false</Mid>
+	<Processor_info>hts</Processor_info>
+	<Tr_info>OPER01</Tr_info>
+	<Page_num>4225</Page_num>
+	<HostExpireTime >15000</HostExpireTime>
+	<Input iName="" >
+		<I Name="hndl_clsf" Desc="처리구분" Align="Left" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" Spec="char" format="char" Default="" IOType="Field" portion="0" UpperCase="N" Valid="Y" Encrypt=""/>
+		<I Name="jb_clsf" Desc="업무구분" Align="Left" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" Spec="char" format="char" Default="" IOType="Field" portion="0" UpperCase="N" Valid="Y" Encrypt=""/>
+		<I Name="eno" Desc="사번" Align="Left" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" Spec="char" format="char" Default="" IOType="Field" portion="0" UpperCase="N" Valid="Y" Encrypt=""/>
+		<I Name="gnl_ac_no" Desc="종합계좌번호" Align="Left" Journal="N" Pad="SPC" Size="9" SizeEN="9" SizeKR="9" Spec="char" format="char" Default="" IOType="Field" portion="0" UpperCase="N" Valid="Y" Encrypt=""/>
+		<I Name="gds_no" Desc="상품번호" Align="Left" Journal="N" Pad="SPC" Size="2" SizeEN="2" SizeKR="2" Spec="char" format="char" Default="" IOType="Field" portion="0" UpperCase="N" Valid="Y" Encrypt=""/>
+		<I Name="inq_strt_dt" Desc="조회시작일자" Align="Left" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" Spec="char" format="char" Default="" IOType="Field" portion="0" UpperCase="N" Valid="Y" Encrypt=""/>
+		<I Name="inq_end_dt" Desc="조회종료일자" Align="Left" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" Spec="char" format="char" Default="" IOType="Field" portion="0" UpperCase="N" Valid="Y" Encrypt=""/>
+		<I Name="rmrk" Desc="비고" Align="Left" Journal="N" Pad="SPC" Size="100" SizeEN="100" SizeKR="100" Spec="char" format="char" Default="" IOType="Field" portion="0" UpperCase="N" Valid="Y" Encrypt=""/>
+	</Input>
+	<Output oName="" >
+		<O Name="o_lngth" Align="Left" Desc="출길이" Journal="N" Pad="SPC" Size="5" SizeEN="5" SizeKR="5" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="o_clsf" Align="Left" Desc="출구분" Journal="N" Pad="SPC" Size="2" SizeEN="2" SizeKR="2" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="o_msg" Align="Left" Desc="출메시지" Journal="N" Pad="SPC" Size="80" SizeEN="80" SizeKR="80" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="msg" Align="Left" Desc="메세지" Journal="N" Pad="SPC" Size="100" SizeEN="100" SizeKR="100" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="grid_cnt1" Align="Left" Desc="그리드건수1" Journal="N" Pad="SPC" Size="4" SizeEN="4" SizeKR="4" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="cnt" Align="Left" Desc="건수" Journal="N" Pad="SPC" Size="4" SizeEN="4" SizeKR="4" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="cnt1" Align="Left" Desc="건수1" Journal="N" Pad="SPC" Size="4" SizeEN="4" SizeKR="4" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="Record1" Align="Left" Repeat="35" Desc="" Journal="N" Pad="SPC" Size="35" SizeEN="35" SizeKR="35" Spec="struct" IOType="Record" UpperCase="N" Valid="Y" Default="" Encrypt="" >
+		    <O1 Name="ac_no" Align="Left" Desc="계좌번호" Journal="N" Pad="SPC" Size="11" SizeEN="11" SizeKR="11" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="ac_nm" Align="Left" Desc="계좌명" Journal="N" Pad="SPC" Size="40" SizeEN="40" SizeKR="40" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="gds_typ_nm" Align="Left" Desc="상품유형명" Journal="N" Pad="SPC" Size="40" SizeEN="40" SizeKR="40" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="opn_dt" Align="Left" Desc="개설일자" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="rgst_dt" Align="Left" Desc="등록일자" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="opn_brn_nm" Align="Left" Desc="개설지점명" Journal="N" Pad="SPC" Size="20" SizeEN="20" SizeKR="20" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="gds_st_ccd" Align="Left" Desc="상품상태구분코드" Journal="N" Pad="SPC" Size="10" SizeEN="10" SizeKR="10" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="fnl_dl_dt" Align="Left" Desc="최종거래일자" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="rmrk" Align="Left" Desc="비고" Journal="N" Pad="SPC" Size="100" SizeEN="100" SizeKR="100" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		    <O1 Name="eno" Align="Left" Desc="사번" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		</O>
+	</Output>
+</Tkb_NCAM4225>

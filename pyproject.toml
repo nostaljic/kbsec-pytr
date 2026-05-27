@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "kbsec-pytr"
+version = "0.1.0"
+description = "Pure-Python KB Securities TR client (no JPype/JDK required)"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["kbsec*"]
+
+[tool.setuptools.package-data]
+kbsec = ["../tr_rules/*.xml"]

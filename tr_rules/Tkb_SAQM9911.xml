@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<Tkb_SAQM9911 error="false">
+    <Name>SAQM9911</Name>
+    <Desc>MTS전용 고객계좌기본정보조회</Desc>
+    <Code></Code>
+    <Route>SAQM9911</Route>
+    <base21></base21>
+    <blocktype></blocktype>
+    <attytype></attytype>
+    <headtype></headtype>
+    <Journal>true</Journal>
+    <screenid>9999</screenid>
+    <Mid>false</Mid>
+    <Processor_info>hts</Processor_info>
+    <Tr_info>OPER01</Tr_info>
+    <Page_num>9911</Page_num>
+    <HostExpireTime >15000</HostExpireTime>
+    <Input iName="" >
+        <I Name="ac_pwd_chk_f" Desc="계좌비밀번호체크여부" Align="Left" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" Spec="char" format="char" Default="" IOType="Field" portion="0" UpperCase="N" Valid="Y" Encrypt=""/>
+        <I Name="gnl_ac_no" Desc="종합계좌번호" Align="Left" Journal="N" Pad="SPC" Size="9" SizeEN="9" SizeKR="9" Spec="char" format="char" Default="" IOType="Field" portion="0" UpperCase="N" Valid="Y" Encrypt=""/>
+        <I Name="gds_no" Desc="상품번호" Align="Left" Journal="N" Pad="SPC" Size="2" SizeEN="2" SizeKR="2" Spec="char" format="char" Default="" IOType="Field" portion="0" UpperCase="N" Valid="Y" Encrypt=""/>
+        <I Name="pwd" Desc="비밀번호" Align="Left" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" Spec="char" format="char" Default="" IOType="Field" portion="0" UpperCase="N" Valid="Y" Encrypt=""/>
+    </Input>
+    <Output oName="" >
+        <O Name="o_lngth" Align="Left" Desc="출길이" Journal="N" Pad="SPC" Size="5" SizeEN="5" SizeKR="5" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+        <O Name="o_clsf" Align="Left" Desc="출구분" Journal="N" Pad="SPC" Size="2" SizeEN="2" SizeKR="2" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+        <O Name="o_msg" Align="Left" Desc="출메시지" Journal="N" Pad="SPC" Size="80" SizeEN="80" SizeKR="80" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+        <O Name="pin_no" Align="Left" Desc="PIN번호" Journal="N" Pad="SPC" Size="13" SizeEN="13" SizeKR="13" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+        <O Name="cs_nm" Align="Left" Desc="고객명" Journal="N" Pad="SPC" Size="40" SizeEN="40" SizeKR="40" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+        <O Name="cs_typ_cd" Align="Left" Desc="고객유형코드" Journal="N" Pad="SPC" Size="2" SizeEN="2" SizeKR="2" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+        <O Name="opn_brn_cd" Align="Left" Desc="개설지점코드" Journal="N" Pad="SPC" Size="3" SizeEN="3" SizeKR="3" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+        <O Name="gds_typ_cd" Align="Left" Desc="상품유형코드" Journal="N" Pad="SPC" Size="3" SizeEN="3" SizeKR="3" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+        <O Name="gds_opn_brn_cd" Align="Left" Desc="상품개설지점코드" Journal="N" Pad="SPC" Size="3" SizeEN="3" SizeKR="3" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+        <O Name="mn_dl_dprt_cd" Align="Left" Desc="주거래부점코드" Journal="N" Pad="SPC" Size="3" SizeEN="3" SizeKR="3" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+        <O Name="gds_st_ccd" Align="Left" Desc="상품상태구분코드" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+    </Output>
+</Tkb_SAQM9911>

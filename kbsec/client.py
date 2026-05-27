@@ -1,6 +1,10 @@
 from __future__ import annotations
+import os
 import xml.etree.ElementTree as ET
 from typing import Dict, Optional
+
+# 패키지 내부 tr_rules/ 기본 경로
+_DEFAULT_RULE_DIR = os.path.join(os.path.dirname(__file__), '..', 'tr_rules')
 
 from .connection import ConnectionPool
 from .header import RequestHeader
@@ -18,7 +22,7 @@ class KBSecClient:
         port: int = 5001,
         pool_size: int = 2,
         timeout: int = 30,
-        rule_dir: str = None,
+        rule_dir: str = _DEFAULT_RULE_DIR,
     ) -> None:
         self._pool = ConnectionPool(
             host=host, port=port, pool_size=pool_size, timeout=timeout

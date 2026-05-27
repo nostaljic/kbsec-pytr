@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tkb_IVA10130 error="false">
+	<Name>IVA10130</Name>
+	<Desc> 일별주가(IVA10130)</Desc>
+	<Code></Code>
+	<Route>IVA10130</Route>
+	<base21></base21>
+	<blocktype></blocktype>
+	<attytype>attr;</attytype>
+	<headtype></headtype>
+	<Journal>true</Journal>
+	<screenid>0130</screenid>
+	<Mid></Mid>
+	<Processor_info>hts</Processor_info>
+	<Tr_info>NIVS01</Tr_info>
+	<Page_num>0130</Page_num>
+	<HostExpireTime>15000</HostExpireTime>
+	<Input iName="" >
+		<I Name="isCd" Align="Left" Desc="종목코드 IS_CD" Journal="N" Pad="SPC" Size="6" SizeEN="6" SizeKR="6" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="_isCd" Align="Left" Desc="_종목코드 IS_CD" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="inqDt" Align="Left" Desc="조회일자 INQ_DT" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="_inqDt" Align="Left" Desc="_조회일자 INQ_DT" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="amtQClsf" Align="Left" Desc="금액수량구분 AMT_Q_CLSF (수량금액구분 : 1:수량, 2:금액)" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="_amtQClsf" Align="Left" Desc="_금액수량구분 AMT_Q_CLSF (수량금액구분 : 1:수량, 2:금액)" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="inqCnt" Align="Left" Desc="조회건수 INQ_CNT" Journal="N" Pad="SPC" Size="4" SizeEN="4" SizeKR="4" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<I Name="_inqCnt" Align="Left" Desc="_조회건수 INQ_CNT" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+	</Input>
+	<Output oName="" >
+		<O Name="lngth" Align="Left" Desc="길이C5" Journal="N" Pad="SPC" Size="5" SizeEN="5" SizeKR="5" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="clsfP" Align="Left" Desc="구분자_C2" Journal="N" Pad="SPC" Size="2" SizeEN="2" SizeKR="2" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="msg" Align="Left" Desc="메시지_C80" Journal="N" Pad="SPC" Size="80" SizeEN="80" SizeKR="80" Spec="char" format="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="RecordSize" Align="Left" Desc="레코드길이" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="dy250MaxPrcDt" Align="Left" Desc="250일최고가일자 DY250_MAX_PRC_DT" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_dy250MaxPrcDt" Align="Left" Desc="_250일최고가일자 DY250_MAX_PRC_DT" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="dy250MaxPrc" Align="Left" Desc="250일최고가 DY250_MAX_PRC" Journal="N" Pad="SPC" Size="11" SizeEN="11" SizeKR="11" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_dy250MaxPrc" Align="Left" Desc="_250일최고가 DY250_MAX_PRC" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="dy250MaxPrcUpDwnRP2" Align="Left" Desc="250일최고가등락율P2 DY250_MAX_PRC_UP_DWN_R_P2" Journal="N" Pad="SPC" Size="7" SizeEN="7" SizeKR="7" format="double" Spec="char" portion="2" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_dy250MaxPrcUpDwnRP2" Align="Left" Desc="_250일최고가등락율P2 DY250_MAX_PRC_UP_DWN_R_P2" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="dy250MinPrcDt" Align="Left" Desc="250일최저가일자 DY250_MIN_PRC_DT" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_dy250MinPrcDt" Align="Left" Desc="_250일최저가일자 DY250_MIN_PRC_DT" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="dy250MinPrc" Align="Left" Desc="250일최저가 DY250_MIN_PRC" Journal="N" Pad="SPC" Size="11" SizeEN="11" SizeKR="11" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_dy250MinPrc" Align="Left" Desc="_250일최저가 DY250_MIN_PRC" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="dy250MinPrcUpDwnRP2" Align="Left" Desc="250일최저가등락율P2 DY250_MIN_PRC_UP_DWN_R_P2" Journal="N" Pad="SPC" Size="7" SizeEN="7" SizeKR="7" format="double" Spec="char" portion="2" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_dy250MinPrcUpDwnRP2" Align="Left" Desc="_250일최저가등락율P2 DY250_MIN_PRC_UP_DWN_R_P2" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="yrMidMaxPrcDt" Align="Left" Desc="년중최고가일자 YR_MID_MAX_PRC_DT" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_yrMidMaxPrcDt" Align="Left" Desc="_년중최고가일자 YR_MID_MAX_PRC_DT" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="yrMidMaxPrc" Align="Left" Desc="년중최고가격 YR_MID_MAX_PRC" Journal="N" Pad="SPC" Size="11" SizeEN="11" SizeKR="11" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_yrMidMaxPrc" Align="Left" Desc="_년중최고가격 YR_MID_MAX_PRC" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="yrMidMaxPrcUpDwnRP2" Align="Left" Desc="년중최고가등락율P2 YR_MID_MAX_PRC_UP_DWN_R_P2" Journal="N" Pad="SPC" Size="7" SizeEN="7" SizeKR="7" format="double" Spec="char" portion="2" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_yrMidMaxPrcUpDwnRP2" Align="Left" Desc="_년중최고가등락율P2 YR_MID_MAX_PRC_UP_DWN_R_P2" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="yrMidMinPrcDt" Align="Left" Desc="년중최저가일자 YR_MID_MIN_PRC_DT" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_yrMidMinPrcDt" Align="Left" Desc="_년중최저가일자 YR_MID_MIN_PRC_DT" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="yrMidMinPrc" Align="Left" Desc="년중최저가 YR_MID_MIN_PRC" Journal="N" Pad="SPC" Size="11" SizeEN="11" SizeKR="11" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_yrMidMinPrc" Align="Left" Desc="_년중최저가 YR_MID_MIN_PRC" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="yrMidMinPrcUpDwnRP2" Align="Left" Desc="년중최저가등락율P2 YR_MID_MIN_PRC_UP_DWN_R_P2" Journal="N" Pad="SPC" Size="7" SizeEN="7" SizeKR="7" format="double" Spec="char" portion="2" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="_yrMidMinPrcUpDwnRP2" Align="Left" Desc="_년중최저가등락율P2 YR_MID_MIN_PRC_UP_DWN_R_P2" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="out2_RecordSize" Align="Left" Desc="out2_레코드길이" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		<O Name="out2" Repeat="0" Align="Left" Desc="" Journal="N" Pad="SPC" Size="0" SizeEN="0" SizeKR="0" Spec="struct" IOType="Record" UpperCase="N" Valid="Y" Default="" Encrypt="" >
+			<O1 Name="dt" Align="Left" Desc="일자 DT" Journal="N" Pad="SPC" Size="8" SizeEN="8" SizeKR="8" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_dt" Align="Left" Desc="_일자 DT" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="opnPrc" Align="Left" Desc="시가 OPN_PRC" Journal="N" Pad="SPC" Size="11" SizeEN="11" SizeKR="11" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_opnPrc" Align="Left" Desc="_시가 OPN_PRC" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="opnPrcUpDwnRP2" Align="Left" Desc="시가등락율P2 OPN_PRC_UP_DWN_R_P2" Journal="N" Pad="SPC" Size="7" SizeEN="7" SizeKR="7" format="double" Spec="char" portion="2" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_opnPrcUpDwnRP2" Align="Left" Desc="_시가등락율P2 OPN_PRC_UP_DWN_R_P2" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="hghPrc" Align="Left" Desc="고가 HGH_PRC" Journal="N" Pad="SPC" Size="11" SizeEN="11" SizeKR="11" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_hghPrc" Align="Left" Desc="_고가 HGH_PRC" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="hghPrcUpDwnRP2" Align="Left" Desc="고가등락율P2 HGH_PRC_UP_DWN_R_P2" Journal="N" Pad="SPC" Size="7" SizeEN="7" SizeKR="7" format="double" Spec="char" portion="2" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_hghPrcUpDwnRP2" Align="Left" Desc="_고가등락율P2 HGH_PRC_UP_DWN_R_P2" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="lwPrc" Align="Left" Desc="저가 LW_PRC" Journal="N" Pad="SPC" Size="11" SizeEN="11" SizeKR="11" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_lwPrc" Align="Left" Desc="_저가 LW_PRC" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="lwPrcUpDwnRP2" Align="Left" Desc="저가등락율P2 LW_PRC_UP_DWN_R_P2" Journal="N" Pad="SPC" Size="7" SizeEN="7" SizeKR="7" format="double" Spec="char" portion="2" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_lwPrcUpDwnRP2" Align="Left" Desc="_저가등락율P2 LW_PRC_UP_DWN_R_P2" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="clsPrc" Align="Left" Desc="종가 CLS_PRC" Journal="N" Pad="SPC" Size="11" SizeEN="11" SizeKR="11" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_clsPrc" Align="Left" Desc="_종가 CLS_PRC" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="bdyCmprCcd" Align="Left" Desc="전일대비구분코드 BDY_CMPR_CCD" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_bdyCmprCcd" Align="Left" Desc="_전일대비구분코드 BDY_CMPR_CCD" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="bdyCmpr" Align="Left" Desc="전일대비 BDY_CMPR" Journal="N" Pad="SPC" Size="11" SizeEN="11" SizeKR="11" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_bdyCmpr" Align="Left" Desc="_전일대비 BDY_CMPR" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="upDwnRP2" Align="Left" Desc="등락율P2 UP_DWN_R_P2" Journal="N" Pad="SPC" Size="7" SizeEN="7" SizeKR="7" format="double" Spec="char" portion="2" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_upDwnRP2" Align="Left" Desc="_등락율P2 UP_DWN_R_P2" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="acmlVlm" Align="Left" Desc="누적거래량 ACML_VLM" Journal="N" Pad="SPC" Size="12" SizeEN="12" SizeKR="12" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_acmlVlm" Align="Left" Desc="_누적거래량 ACML_VLM" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="dlTwAmt" Align="Left" Desc="거래대금 DL_TW_AMT" Journal="N" Pad="SPC" Size="18" SizeEN="18" SizeKR="18" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_dlTwAmt" Align="Left" Desc="_거래대금 DL_TW_AMT" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="crdtRtP2" Align="Left" Desc="신용비율P2 CRDT_RT_P2" Journal="N" Pad="SPC" Size="7" SizeEN="7" SizeKR="7" format="double" Spec="char" portion="2" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_crdtRtP2" Align="Left" Desc="_신용비율P2 CRDT_RT_P2" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="ognNtB" Align="Left" Desc="기관순매수 OGN_NT_B" Journal="N" Pad="SPC" Size="12" SizeEN="12" SizeKR="12" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_ognNtB" Align="Left" Desc="_기관순매수 OGN_NT_B" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="indvNtB" Align="Left" Desc="개인순매수 INDV_NT_B" Journal="N" Pad="SPC" Size="12" SizeEN="12" SizeKR="12" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_indvNtB" Align="Left" Desc="_개인순매수 INDV_NT_B" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="fgnrChgQ" Align="Left" Desc="외국인변동수량 FGNR_CHG_Q" Journal="N" Pad="SPC" Size="12" SizeEN="12" SizeKR="12" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_fgnrChgQ" Align="Left" Desc="_외국인변동수량 FGNR_CHG_Q" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="frgnAffltNtB" Align="Left" Desc="외국계순매수 FRGN_AFFLT_NT_B" Journal="N" Pad="SPC" Size="12" SizeEN="12" SizeKR="12" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_frgnAffltNtB" Align="Left" Desc="_외국계순매수 FRGN_AFFLT_NT_B" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="pgmTrdNtB" Align="Left" Desc="프로그램매매순매수 PGM_TRD_NT_B" Journal="N" Pad="SPC" Size="12" SizeEN="12" SizeKR="12" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_pgmTrdNtB" Align="Left" Desc="_프로그램매매순매수 PGM_TRD_NT_B" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="fgnrVnshRP2" Align="Left" Desc="외국인소진율P2 FGNR_VNSH_R_P2" Journal="N" Pad="SPC" Size="7" SizeEN="7" SizeKR="7" format="double" Spec="char" portion="2" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_fgnrVnshRP2" Align="Left" Desc="_외국인소진율P2 FGNR_VNSH_R_P2" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="vlmCmprRP2" Align="Left" Desc="거래량대비율P2 VLM_CMPR_R_P2" Journal="N" Pad="SPC" Size="7" SizeEN="7" SizeKR="7" format="double" Spec="char" portion="2" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_vlmCmprRP2" Align="Left" Desc="_거래량대비율P2 VLM_CMPR_R_P2" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="minPrcCmprNowPrcUpRP2" Align="Left" Desc="최저가대비현재가상승율P2 MIN_PRC_CMPR_NOW_PRC_UP_R_P2" Journal="N" Pad="SPC" Size="7" SizeEN="7" SizeKR="7" format="double" Spec="char" portion="2" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_minPrcCmprNowPrcUpRP2" Align="Left" Desc="_최저가대비현재가상승율P2 MIN_PRC_CMPR_NOW_PRC_UP_R_P2" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="maxPrcCmprNowPrcDwnRP2" Align="Left" Desc="최고가대비현재가하락율P2 MAX_PRC_CMPR_NOW_PRC_DWN_R_P2" Journal="N" Pad="SPC" Size="7" SizeEN="7" SizeKR="7" format="double" Spec="char" portion="2" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_maxPrcCmprNowPrcDwnRP2" Align="Left" Desc="_최고가대비현재가하락율P2 MAX_PRC_CMPR_NOW_PRC_DWN_R_P2" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="indxP2" Align="Left" Desc="지수P2 INDX_P2" Journal="N" Pad="SPC" Size="9" SizeEN="9" SizeKR="9" format="double" Spec="char" portion="2" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_indxP2" Align="Left" Desc="_지수P2 INDX_P2" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="indxBdyCmprCcd" Align="Left" Desc="지수전일대비구분코드 INDX_BDY_CMPR_CCD" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="char" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_indxBdyCmprCcd" Align="Left" Desc="_지수전일대비구분코드 INDX_BDY_CMPR_CCD" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="indxBdyCmprP2" Align="Left" Desc="지수전일대비P2 INDX_BDY_CMPR_P2" Journal="N" Pad="SPC" Size="9" SizeEN="9" SizeKR="9" format="double" Spec="char" portion="2" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_indxBdyCmprP2" Align="Left" Desc="_지수전일대비P2 INDX_BDY_CMPR_P2" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="indxUpDwnRP2" Align="Left" Desc="지수등락율P2 INDX_UP_DWN_R_P2" Journal="N" Pad="SPC" Size="7" SizeEN="7" SizeKR="7" format="double" Spec="char" portion="2" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_indxUpDwnRP2" Align="Left" Desc="_지수등락율P2 INDX_UP_DWN_R_P2" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="fgnrSgrvtP2" Align="Left" Desc="외국인비중P2 FGNR_SGRVT_P2" Journal="N" Pad="SPC" Size="7" SizeEN="7" SizeKR="7" format="double" Spec="char" portion="2" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_fgnrSgrvtP2" Align="Left" Desc="_외국인비중P2 FGNR_SGRVT_P2" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="sprc" Align="Left" Desc="기준가 SPRC" Journal="N" Pad="SPC" Size="11" SizeEN="11" SizeKR="11" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_sprc" Align="Left" Desc="_기준가 SPRC" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="sprcUpAmt" Align="Left" Desc="기준가상승금액 STD_PRC_UP_AMT" Journal="N" Pad="SPC" Size="11" SizeEN="11" SizeKR="11" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_sprcUpAmt" Align="Left" Desc="_기준가상승금액 STD_PRC_UP_AMT" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="sprcDwnAmt" Align="Left" Desc="기준가하락금액 STD_PRC_DWN_AMT" Journal="N" Pad="SPC" Size="11" SizeEN="11" SizeKR="11" format="long" Spec="char" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+			<O1 Name="_sprcDwnAmt" Align="Left" Desc="_기준가하락금액 STD_PRC_DWN_AMT" Journal="N" Pad="SPC" Size="1" SizeEN="1" SizeKR="1" format="byte" Spec="byte" portion="0" IOType="Field" UpperCase="N" Valid="Y" Default="" Encrypt="" />
+		</O>
+	</Output>
+</Tkb_IVA10130>
